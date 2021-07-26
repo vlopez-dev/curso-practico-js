@@ -18,7 +18,7 @@ function perimetroCuadrado(lado){
 
 // -------------Perimetro---------
 function perimetroTriangulo(lado1,base,lado2) {
-    return lado1 + lado2 + base;
+    return (lado1 + lado2 + base);
 }
 
 // -------------Area---------
@@ -30,7 +30,7 @@ function areaTriangulo(base,altura) {
 
 
 
-// -------------Codigo Triangulo-----------
+// -------------Codigo Circulo-----------
 
 // -------------Radio---------
 
@@ -80,7 +80,28 @@ alert(area)
 
 
 function calcularPerimetroTriangulo() {
-    const input = document.getElementById("calcularPerimetroTriangulo");
-    const value = input.value;
-    perimetro = perimetroTriangulo;
+    const inputlado1 = document.getElementById("InputTrianguloLado1");
+    const inputlado2 = document.getElementById("InputTrianguloLado2");
+    const inputladobase = document.getElementById("InputTrianguloLadobase");
+
+    const valuelado1 = parseInt(inputlado1.value);
+    const valuelado2 = parseInt(inputlado2.value);
+    const  valueladobase = parseInt( inputladobase.value);
+    perimetro= perimetroTriangulo(valuelado1,valuelado2,valueladobase);
+    alert(perimetro);
+
+}
+
+function CalcularareaTriangulo() {
+ const inputAltura = document.getElementById("InputAltura")
+ const inputBase = document.getElementById("InputBase")
+
+ const base = parseInt(inputBase.value);
+ const altura = parseInt(inputAltura.value)
+    area = areaTriangulo(base,altura)
+    alert(area)
+}
+
+function calcularDiametro() {
+    
 }

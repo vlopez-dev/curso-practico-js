@@ -1,0 +1,39 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.section__cuadrado{
+    background-color: blue;
+    outline: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+align-items: center;
+    height: 200px;
+    width: auto;
+}
+.section__cuadrado h2{
+    padding: 15px;
+}
+
+.section__triangulo{
+    background: cadetblue;
+    outline: 2px solid firebrick;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 200px;
+    width: auto;
+}
+
+

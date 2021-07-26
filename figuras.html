@@ -12,7 +12,7 @@
         <h1>Figuras Geometricas</h1>
 
     </header>
-    <section>
+    <section class="section__cuadrado">
         <h2>Calcula el área  perímetro de un cuadrado</h2>
 
         <form action="">
@@ -29,22 +29,45 @@
     </section>
 
 
-    <section>
+    <section class="section__triangulo">
         <h2>Calcula el área  perímetro de un triangulo</h2>
 
         <form action="">
 
-            <label for="InputTriangulo">Escribe cuanto mide cada lado de tu cuadrado:</label>
+            <label for="">Escribe cuanto mide cada lado de tu triangulo:</label>
+            <label for="InputTrianguloLado1">Lado</label>
 
-            <input id="InputTriangulo                                             " type="number">
+            <input id="InputTrianguloLado1" type="number">
 
-            <button type="button" onclick="
-            ()">Calcular Perimetro</button>
-            <button type="button" onclick="calcularAreaTriangulo()">Calcular àrea</button>
+            <label for="InputTrianguloLado2">Lado</label>
+
+            <input id="InputTrianguloLado2" type="number">
+            <label for="InputTrianguloLadobase">Base</label>
+
+            <input id="InputTrianguloLadobase" type="number">
+
+         <button type="button" onclick="calcularPerimetroTriangulo()">Calcular Perimetro</button>
+
+        </form>
+
+</section>
+        <form action="">
+
+            <label for="">Escribe cuanto mide cada lado de tu triangulo:</label>
+            <label for="inputAltura">Altura</label>
+
+            <input id="InputAltura" type="number">
+
+            <label for="InputBase">Base</label>
+
+            <input id="InputBase" type="number">
+          
+            <button type="button" onclick="CalcularareaTriangulo()">Calcular àrea</button>
+         
+
         </form>
 
 
-    </section>
 
 
     
