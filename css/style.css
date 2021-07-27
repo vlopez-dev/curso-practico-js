@@ -6,55 +6,45 @@
 }
 
 body{
-
-    display: flex;
-    flex-direction: column;
+    height: 100vh;
     background-image: linear-gradient(to right bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
 }
 
-.section__cuadrado{
+
+html{
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+    
+}
+main{
+    height: 100vh;
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     align-content: center;
-    align-items: center;
-    height: 200px;
+    flex-direction: row;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+section{
+    width: 400px;
+    height: 500px;
+}
+
+form {
     width: auto;
+    height: 350px;
+    align-content: center;
 }
-.section__cuadrado h2{
-    padding: 15px;
+ h2{
+    color: white;
+    margin: 20px;
+    text-align: center;
 }
-.section__cuadrado input{
+
+input{
     display: block;
-    margin: 5px;
-}
-
-.section__triangulo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    height: 200px;
-    width: auto;
-}
-.section__triangulo form{
-    padding: 20px;
-}
-
-.section__triangulo input, label{
-    display: block;
-}
-
-.section__circulo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.section__circulo input , label{
-    display: block;
-
-}
-.section__circulo form{
-    padding: 20px;
 }
