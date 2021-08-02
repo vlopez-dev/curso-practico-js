@@ -15,6 +15,12 @@ function perimetroCuadrado(lado){
 
 // -------------Codigo Triangulo-----------
 
+function Isosceles(ladoa,ladob) {
+    console.log(ladoa,ladob)
+    return (Math.sqrt(Math.pow(ladoa,2)- Math.pow((ladob/2),2)))
+}
+
+
 
 // -------------Perimetro---------
 function perimetroTriangulo(lado1,base,lado2) {
@@ -125,4 +131,17 @@ function calcularAreaCirculo() {
     const radio = parseInt(inputRadio.value);
     area = diametroCirculo(radio)
     alert(" El area es " + area)
+}
+
+function CalcularAlturaIsosceles() {
+    const inputladoa = document.getElementById("InputTrianguloLadoa");
+    const inputladob = document.getElementById("InputTrianguloLadob");
+    const ladoa = parseInt(inputladoa.value);
+    const ladob = parseInt(inputladob.value)
+    
+    altura = Isosceles(ladoa,ladob)
+    alert(altura)
+
+
+
 }

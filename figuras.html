@@ -9,15 +9,15 @@
   </head>
   <body>
     <header>
-      <h1>Figuras Geometricas</h1>
+      <h1 class="title">Figuras Geometricas</h1>
     </header>
 
 
-    <main>
-    <section class="section__cuadrado">
+    <main class="container">
+    <section class="container__section">
       <h2>Calcula el área perímetro de un cuadrado</h2>
 
-      <form action="">
+      <form action="" class="container__section__form">
         <label for="InputCuadrado"
           >Escribe cuanto mide cada lado de tu cuadrado:</label
         >
@@ -71,6 +71,7 @@
           Calcular àrea
         </button>
       </form>
+    </form>
     </section>
 
     <section class="section__circulo">
@@ -98,6 +99,27 @@
             Calcular area
           </button>
         
+      </form>
+    </section>
+
+
+
+    <section class="section__triangulo">
+      <h2>Calcula el área perímetro de un triangulo</h2>
+
+      <form action="">
+        <label for="">Escribe cuanto mide cada lado de tu triangulo:</label>
+        <label for="InputTrianguloLadoa">Lado</label>
+
+        <input id="InputTrianguloLadoa" type="number" />
+
+        <label for="InputTrianguloLadob">Lado</label>
+
+        <input id="InputTrianguloLadob" type="number" />
+      
+        <button type="button" onclick="CalcularAlturaIsosceles()">
+          Calcular Altura Isosceles
+        </button>
       </form>
     </section>
   </main>
