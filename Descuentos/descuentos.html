@@ -8,9 +8,25 @@
     <title>Descuentos</title>
 </head>
 <body>
-    
-    <h1>Descuentos</h1>
+    <header>
+        <h1>Descuentos</h1>
+<p>Segundo taller de Javascript</p>
+    </header>
+<section>
+    <h2>Calcula el precio a pagar tus productos con descuentos</h2>
+</section>
+<form action="">
+    <label for="InputPrice">Escribe el precio de tu producto</label>
+    <input id="InputPrice" type="number">
 
+    <label for="InputDiscount">Escribe el descuento de tu producto</label>
+
+    <input id="InputDiscount" type="number">
+    <button type="button" onclick="ButtonPriceDiscount">
+        Calcular precio con Desuento
+    </button>
+    <p id="ResultPrice"></p>
+</form>
 
     <script src="./js/descuentos.js"></script>
 </body>
