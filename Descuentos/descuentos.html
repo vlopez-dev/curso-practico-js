@@ -22,10 +22,13 @@
     <label for="InputDiscount">Escribe el descuento de tu producto</label>
 
     <input id="InputDiscount" type="number">
-    <button type="button" onclick="ButtonPriceDiscount">
+    <button type="button" onclick="ButtonPriceDiscount()">
         Calcular precio con Desuento
     </button>
     <p id="ResultPrice"></p>
+   <select name="" id="cupones" onclick="cargarCupones()"></select> 
+
+    
 </form>
 
     <script src="./js/descuentos.js"></script>
