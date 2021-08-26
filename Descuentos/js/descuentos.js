@@ -52,7 +52,6 @@ function cargarCupones(){
         for (let index = 0; index < cupones.length; index++) {
             var element = cupones[index];
             document.getElementById("cupones").innerHTML += "<option value='"+cupones[index]+"'>"+cupones[index]+"</option>"; 
-
         }
         
             
